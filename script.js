@@ -61,7 +61,7 @@ function writePassword() {
   }else{// msg for requirement.
     myPassword = "You need to choose at least one type of charachters for your Password!!"
   }
-.
+
 
   passwordText.value = myPassword;
 
