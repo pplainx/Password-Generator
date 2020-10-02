@@ -1,4 +1,4 @@
-// Assign values 
+// Assign values
 var generateBtn = document.querySelector("#generate");
 var myLowercase = 'abcdefghijklmnopqrstuvwxyz';
 var myUppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -15,7 +15,7 @@ function writePassword() {
 
   // Define the values of password chracters (ask user to choose types of characters that include)
   var passwordText = document.querySelector("#password");
-  
+
   var askLowercase = confirm('Do you want lowercase characters?');
   if(askLowercase){
     temppass += myLowercase;
@@ -42,7 +42,7 @@ function writePassword() {
 
    // Set up password Length between 8 to 128
   passLength = prompt('How many charachters do you want? (choose bettween 8 and 128)')
-  
+
   // Assign passLength to Number from String
   passLength = Number(passLength);
 
@@ -51,7 +51,7 @@ function writePassword() {
   if(temppass){
     // if condition for password lengths are under condition
     if(passLength >=8 && passLength <=128){
-      // for loop for creating random number 
+      // for loop for creating random number
       for(let i=0; i<passLength; i++){
       myPassword += temppass[Math.floor(Math.random(passLength)*temppass.length)];
       }
@@ -61,11 +61,11 @@ function writePassword() {
   }else{// msg for requirement.
     myPassword = "You need to choose at least one type of charachters for your Password!!"
   }
-
+.
 
   passwordText.value = myPassword;
 
 }
- 
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);

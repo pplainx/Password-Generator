@@ -12,4 +12,4 @@ Click link to view it live : [here](https://pplainx.github.io/Password-Generator
 
 
 ### Usage
-Click the generate password button, then the application will give alerts about the criteria, follow the alerts and then enter the your password with the correct length.
+Click the generate password button, then the application will give alerts about the criteria, follow the alerts and then enter the your password with the correct length..
